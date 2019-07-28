@@ -1,0 +1,94 @@
+.offer {
+  padding-top: 186px;
+  padding-bottom: 43px;
+  background-color: @green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px auto;
+  background-position: center top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
+.offer__slogan {
+  position: relative;
+  width: 163px;
+  .mp-zero;
+  margin: 0 auto;
+  .center;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+}
+
+.offer__slogan::before {
+  position: absolute;
+  content: "";
+  top: -120px;
+  left: 53px;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding-top: 72px;
+    padding-bottom: 68px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 708px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .offer__slogan {
+    margin: 0;
+    margin-right: 123px;
+    text-align: left;
+  }
+
+  .offer__slogan::before {
+    top: -7px;
+    left: -331px;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .offer {
+    padding-top: 186px;
+    padding-bottom: 43px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 245px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .offer__slogan {
+    margin: 0 auto;
+    .center;
+  }
+
+  .offer__slogan::before {
+    top: -120px;
+    left: 55px;
+  }
+}

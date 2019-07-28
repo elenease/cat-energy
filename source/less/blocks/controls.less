@@ -1,0 +1,138 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+  margin: 0 auto;
+}
+
+.controls__button {
+  padding: 0;
+  background-color: transparent;
+  .ff-oswald;
+  .t-upper;
+  .font(16px;
+  20px;
+  400;
+  @black);
+  border: 1px solid transparent;
+}
+
+.controls__button:hover,
+.controls__button:focus {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(17, 17, 17, 0.4);
+}
+
+.controls__button:active {
+  border-bottom: none;
+}
+
+.controls__wrapper {
+  position: relative;
+}
+
+.controls__bar {
+  box-sizing: border-box;
+  margin-top: 3px;
+
+  width: 81px;
+  height: 14px;
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.controls__range {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+
+  width: 35px;
+  height: 6px;
+  background-color: @green;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .controls {
+    width: 570px;
+  }
+
+  .controls__button {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .controls__bar {
+    width: 428px;
+    height: 6px;
+    margin-top: 7px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .controls__range {
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    top: -7px;
+    left: 199px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid @green;
+
+      box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+      background-color: @green;
+      border-radius: 50%;
+    }
+  }
+
+  .controls__range:active::before {
+    top: 11px;
+    left: 11px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .controls {
+    margin-left: 79px;
+  }
+
+  .controls__button {
+    padding-bottom: 5px;
+  }
+
+  .controls__range {
+    top: -6px;
+    left: 200px;
+  }
+}

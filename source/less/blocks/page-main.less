@@ -1,0 +1,48 @@
+.page-main__header {
+  box-sizing: border-box;
+  .mp-zero;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 25px;
+  .ff-oswald;
+  .font(36px;
+  60px;
+  400;
+  @black);
+}
+
+.page-main__header--catalog {
+  padding-bottom: 29px;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .page-main__header {
+    font-size: 60px;
+    padding-top: 54px;
+  }
+
+  .page-main__header--catalog {
+    font-size: 60px;
+    margin-bottom: 54px;
+  }
+
+  .page-main__header--form {
+    padding-top: 54px;
+    padding-bottom: 55px;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .page-main__header--form {
+    padding-top: 71px;
+    padding-bottom: 56px;
+  }
+
+  .page-main__header--catalog {
+    padding-top: 71px;
+    padding-bottom: 83px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,54 @@
+.cat-data {
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.cat-data__list {
+  .mp-zero;
+  .ls-none;
+}
+
+.cat-data__field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cat-data__field .form__label {
+  margin-right: 15px;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .cat-data {
+    padding-top: 41px;
+    padding-bottom: 22px;
+    margin-bottom: 50px;
+  }
+
+  .cat-data__field {
+    margin-bottom: 20px;
+  }
+
+  .cat-data__field .form__label {
+    margin-right: 22px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .cat-data {
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

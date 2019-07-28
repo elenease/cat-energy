@@ -1,0 +1,57 @@
+.location {
+  margin: 0 auto;
+  background-color: @light-gray;
+}
+
+.location__map {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 362px;
+  .mp-zero;
+  overflow: hidden;
+  background-color: @light-gray;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+    background-position: center top;
+  }
+}
+
+.location__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .location__map {
+    height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 768px auto;
+    }
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .location__wrapper {
+    position: relative;
+  }
+
+  .location__map {
+    height: 400px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1300px auto;
+    }
+  }
+}

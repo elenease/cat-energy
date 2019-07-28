@@ -1,0 +1,50 @@
+.form-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+
+  top: -5px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-input-checkbox + label:hover::before,
+.form-input-checkbox + label:focus::before {
+  border: 1px solid #bababa;
+}
+
+.form-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -41px;
+
+  width: 21px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.form-input-checkbox + label:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .form-input-checkbox + .form__label::before {
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: -59px;
+  }
+
+  .form-input-checkbox:checked + .form__label::after {
+    left: -49px;
+  }
+}

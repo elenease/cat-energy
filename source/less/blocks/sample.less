@@ -1,0 +1,80 @@
+.sample {
+  background-color: @light-gray;
+  padding-bottom: 34px;
+}
+
+.sample__title {
+  .mp-zero;
+  margin-bottom: 35px;
+  padding-top: 30px;
+
+  .ff-oswald;
+  .font(36px;
+  36px;
+  400;
+  @black);
+}
+
+.sample__description {
+  margin-bottom: 25px;
+  padding-right: 13px;
+}
+
+.sample__stats {
+  margin-bottom: 34px;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .sample {
+    background-image: linear-gradient(to bottom, @white 618px, @light-gray 618px);
+    padding-bottom: 66px;
+  }
+
+  .sample__title {
+    margin-bottom: 64px;
+    padding-top: 45px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .sample__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .sample {
+    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, @white 180px, #f2f2f2 180px);
+  }
+
+  .sample__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sample__title {
+    padding-top: 44px;
+    margin-bottom: 129px;
+  }
+
+  .sample__text-wrapper {
+    width: 570px;
+  }
+
+  .sample__description {
+    width: 432px;
+    margin-bottom: 69px;
+  }
+
+  .sample__results {
+    width: 610px;
+    margin-top: -245px;
+  }
+}

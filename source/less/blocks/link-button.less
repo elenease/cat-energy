@@ -1,0 +1,61 @@
+.link-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: -1px;
+  .ff-oswald;
+  .font(16px;
+  16px;
+  400;
+  @black);
+  .t-upper;
+  .no-decor;
+}
+
+.link-button::after {
+  position: absolute;
+  content: "";
+
+  top: 2px;
+  left: 96px;
+  width: 24px;
+  height: 11px;
+
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
+
+.link-button:hover::after,
+.link-button:focus::after {
+  width: 32px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.link-button:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .link-button::after {
+    top: 4px;
+    left: 129px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .link-button::after {
+    top: 3px;
+    left: 130px;
+  }
+}

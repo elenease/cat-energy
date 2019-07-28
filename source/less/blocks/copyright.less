@@ -1,0 +1,72 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 22px 0;
+}
+
+.copyright__link {
+  display: block;
+  .font(16px;
+  16px;
+  400;
+  @dark-gray);
+  .no-decor;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__img {
+  display: block;
+  .no-decor;
+  width: 34px;
+  height: auto;
+  padding-top: 5px;
+
+  fill: #666666;
+}
+
+.copyright__logo:hover,
+.copyright__logo:focus {
+  fill: @green;
+}
+
+.copyright__logo:active {
+  opacity: 0.3;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__logo {
+    margin-top: -4px;
+  }
+
+  .copyright__link {
+    margin-bottom: 1px;
+  }
+
+  .copyright__img {
+    padding-top: 8px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .copyright__img {
+    padding-top: 7px;
+  }
+
+  .copyright__logo {
+    margin-top: -1px;
+  }
+
+  .copyright__link {
+    margin-bottom: 3px;
+  }
+}

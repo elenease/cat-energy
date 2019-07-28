@@ -1,0 +1,106 @@
+.add-on {
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid @line-gray;
+}
+
+.add-on:first-child {
+  border-top: 1px solid @line-gray;
+}
+
+.add-on__title {
+  .mp-zero;
+  margin-bottom: 13px;
+  .ff-oswald;
+  .t-upper;
+  .font(16px;
+  16px;
+  400;
+  @black222);
+}
+
+.add-on__info {
+  display: flex;
+  justify-content: space-between;
+  .mp-zero;
+  margin-bottom: 15px;
+  line-height: 14px;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .add-on {
+    padding-top: 27px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+  }
+
+  .add-on__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  .add-on__title {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-on__info {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-on__price {
+    margin-left: 52px;
+  }
+
+  .add-on__button {
+    margin: 0 auto;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .add-on {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 895px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 1px;
+    padding-right: 0;
+  }
+
+  .add-on__wrapper {
+    width: 610px;
+    margin-bottom: 0;
+  }
+
+  .add-on__title {
+    padding-top: 4px;
+  }
+
+  .add-on__pack {
+    width: 241px;
+    padding-top: 7px;
+  }
+
+  .add-on__price {
+    width: 44px;
+    margin-left: 0;
+    padding-top: 7px;
+  }
+
+  .add-on__button {
+    box-sizing: border-box;
+    width: 245px;
+    margin-left: 39px;
+  }
+}

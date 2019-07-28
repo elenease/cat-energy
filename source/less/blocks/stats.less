@@ -1,0 +1,171 @@
+.stats__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 27px;
+  .center;
+}
+
+.stats__weight {
+  box-sizing: border-box;
+  width: 124px;
+  padding: 13px 20px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.stats__days {
+  box-sizing: border-box;
+  width: 124px;
+  padding: 13px 10px 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.stats__amount {
+  .mp-zero;
+  .ff-oswald;
+  .t-upper;
+  .font(24px;
+  24px;
+  400;
+  @black);
+}
+
+.stats__weight-text {
+  position: relative;
+  width: 55px;
+  .mp-zero;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: @light-gray;
+  top: 9px;
+  left: -4px;
+  .font(12px;
+  12px;
+  400;
+  @dark-gray);
+}
+
+.stats__days-text {
+  position: relative;
+  width: 59px;
+  .mp-zero;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: @light-gray;
+  top: 9px;
+  left: 8px;
+  .font(12px;
+  12px;
+  400;
+  @dark-gray);
+}
+
+.stats__cost {
+  .mp-zero;
+  .center;
+  .ff-oswald;
+  .t-upper;
+  .font(14px;
+  20px;
+  400;
+  @black);
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .stats {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 86px;
+  }
+
+  .stats__wrapper {
+    margin-bottom: 0;
+  }
+
+  .stats__weight {
+    width: 162px;
+    margin-right: 42px;
+    padding: 14px 20px 3px;
+  }
+
+  .stats__amount {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .stats__weight-text {
+    width: 114px;
+    padding-left: 0;
+    padding-right: 0;
+    top: 11px;
+    left: 3px;
+    background-color: @white;
+
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .stats__days {
+    width: 162px;
+    padding: 14px 20px 3px;
+  }
+
+  .stats__days-text {
+    width: 142px;
+    padding-left: 0;
+    padding-right: 0;
+    top: 10px;
+    left: -11px;
+    background-color: @white;
+
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .stats__cost {
+    width: 192px;
+    margin-top: 7px;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: right;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .stats {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 72px;
+  }
+
+  .stats__wrapper {
+    margin-bottom: 51px;
+  }
+
+  .stats__cost {
+    display: flex;
+    justify-content: flex-start;
+    width: 366px;
+    margin-left: 0;
+  }
+
+  .stats__cost-text {
+    margin-right: 64px;
+  }
+
+  .stats__weight-text {
+    background-color: @light-gray;
+  }
+
+  .stats__days-text {
+    background-color: @light-gray;
+  }
+}
